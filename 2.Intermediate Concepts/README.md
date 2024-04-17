@@ -228,3 +228,11 @@ file.close()
 ```
 
 <b>Example: Reading all lines into a list using</b> `readlines()`:
+
+```python
+file = open("example.txt", "r")
+lines = file.readlines()
+for line in lines:
+    print(line.strip()) # split() removes any trailing newlines
+file.close()
+```
