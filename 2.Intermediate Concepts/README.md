@@ -236,3 +236,16 @@ for line in lines:
     print(line.strip()) # split() removes any trailing newlines
 file.close()
 ```
+
+## 2.3 Writing to a File
+
+You can write data to a file using the `write()` method. If the file already exists, it will be overwritten unless you're in append mode.
+
+<b>Example: Writing to a file using </b> `write()`:
+
+```python
+file = open("example.txt", "w")
+file.write("Hello, world!\n")
+file.write("This is a new file.")
+file.close()
+```
