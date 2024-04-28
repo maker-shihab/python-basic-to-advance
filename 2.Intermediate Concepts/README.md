@@ -249,3 +249,15 @@ file.write("Hello, world!\n")
 file.write("This is a new file.")
 file.close()
 ```
+
+## 2.4 Appending to a File
+
+To add new content to the end of an existing file, you can open the file in append mode (`"a"`) and use the `write()` method.
+
+<b>Example: Appending data to a file:</b>
+
+```python
+file = open("example.txt", "a")
+file.write("\nThis is appended text.")
+file.close()
+```
