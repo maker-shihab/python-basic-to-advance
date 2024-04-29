@@ -261,3 +261,23 @@ file = open("example.txt", "a")
 file.write("\nThis is appended text.")
 file.close()
 ```
+
+## 2.5 Using with Statement (Best Practice)
+
+It's a good practice to use the `with` statement when working with files. It ensures that the file is automatically closed after the block of code is executed, even if an error occurs.
+
+<b>Example: Reading a file using</b> `with`:
+
+```python
+with open("example.txt", "r") as file:
+    content = file.read()
+    print(content)
+# No need to call file.close(), it is done automatically
+```
+
+<b>Example: Writing to a file using</b> `with`:
+
+```python
+with open("example.txt", "w") as file:
+    file.write("This is written using 'with' statement.")
+```
