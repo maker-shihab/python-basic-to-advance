@@ -281,3 +281,5 @@ with open("example.txt", "r") as file:
 with open("example.txt", "w") as file:
     file.write("This is written using 'with' statement.")
 ```
+
+## 2.6 Working with Binary Files
