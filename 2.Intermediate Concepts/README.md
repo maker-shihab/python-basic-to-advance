@@ -283,3 +283,7 @@ with open("example.txt", "w") as file:
 ```
 
 ## 2.6 Working with Binary Files
+
+You can also handle binary files (such as images or videos) by opening the file in binary mode using `"rb"` (for reading) or `"wb"` (for writing).
+
+<b>Example: Reading a binary file:</b>
