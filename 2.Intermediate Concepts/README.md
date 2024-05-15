@@ -293,3 +293,10 @@ with open("image.png", "rb") as file:
     binary_data = file.read()
     print(binary_data)  # Prints binary data (bytes)
 ```
+
+<b>Example: Writing binary data:</b>
+
+```python
+with open("image_copy.png", "wb") as file:
+    file.write(binary_data)
+```

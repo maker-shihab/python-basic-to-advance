@@ -22,3 +22,11 @@ user_info = {
     "password": "securepassword123"
 }
 print(f"Username: {user_info['username']}, Email: {user_info['email']}")
+
+# Copying the Contents of One File to Another
+with open("source.txt", "r") as source_file:
+    with open("destination.txt", "w") as destination_file:
+        content = source_file.read()
+        destination_file.write(content)
+
+# Counting the Number of Lines in a File
