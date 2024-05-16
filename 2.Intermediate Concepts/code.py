@@ -30,3 +30,8 @@ with open("source.txt", "r") as source_file:
         destination_file.write(content)
 
 # Counting the Number of Lines in a File
+with open("user_data.txt", "w") as file:
+    name = input("Enter your name: ")
+    age = input("Enter your age: ")
+    file.write(f"Name: {name}\n")
+    file.write(f"Age: {age}\n")
