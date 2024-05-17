@@ -35,3 +35,10 @@ with open("user_data.txt", "w") as file:
     age = input("Enter your age: ")
     file.write(f"Name: {name}\n")
     file.write(f"Age: {age}\n")
+
+#  Writing User Input to a File
+with open("user_data.txt", "w") as file:
+    name = input("Enter your name: ")
+    age = input("Enter your age: ")
+    file.write(f"Name: {name}\n")
+    file.write(f"Age: {age}\n")
