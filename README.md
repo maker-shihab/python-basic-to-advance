@@ -45,29 +45,3 @@ git clone https://github.com/your-username/python-basic-to-advance.git
 ## Contributing
 
 Feel free to fork the repo, create a branch, and submit pull requests with improvements, examples, or any suggestions you might have.
-
-### Syntax
-
-```python
-my_dist = {key1: value1, key2: value2, key3: value3}
-```
-
-### Example:
-
-```python
-person = {
-  "name": "Shihab",
-  "age": 25,
-  "country": "Bangladesh"
-}
-
-print(person["name"]) # Accessing a value using a key
-```
-
-### Common Dictionary Operations:
-
-- get(): Return the value for a key, or a default value if the key doesn't exist.
-- items(): Return a view object with all key-value pairs.
-- keys(): Return a view object with all the keys.
-- values(): Return a view object with all the values.
-- update(): Update the dictionary with key-value pairs from another dictionary.
