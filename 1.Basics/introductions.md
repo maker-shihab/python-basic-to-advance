@@ -11,7 +11,7 @@ This section covers the basic building blocks of Python. Here, you’ll find exp
 
 ## Concepts
 
-### 1. Variables | Data Types
+## 1. Variables | Data Types
 
 - Variables store data values.
 
@@ -25,7 +25,7 @@ This section covers the basic building blocks of Python. Here, you’ll find exp
   varDict = { "name": "Maker", "age": 25 } #key value pair
 ```
 
-### 1.2 Input/Output
+## 1.2 Input/Output
 
 ### Overview
 
@@ -99,4 +99,51 @@ print("My name is {}, I'm {} years old".format(name, age));
 ```python
 user_input = input("Enter something: ");
 print(f"Your entered: {user_input}");
+```
+
+## 2. Conditionals
+
+### Overview
+
+Conditionals allow you to make decisions in your code based on certain conditions. In Python, conditionals are controlled using if, elif, and else statements. They help execute specific code blocks only when certain conditions are true or false.
+
+### Syntax
+
+```python
+if condition:
+    # code block
+```
+
+### example
+
+```python
+age = 22;
+if (age >= 45):
+    print(f"Sorry you are not allowed, Maximum age required 45");
+elif (age <= 18):
+    print(f"Sorry you are not allowed, Minimum age required 18");
+else:
+    print("Welcome, you are allowed to enter.");
+```
+
+### Conditional Expressions (Ternary Operator)
+
+### Example
+
+```python
+age = 22;
+status = "Adult" if age >= 18 else "Minor"
+print(status);
+```
+
+### Common Use Cases:
+
+- Checking for even or odd numbers:
+
+```python
+number = int(input("Enter a number: "));
+if (number % 2 == 0):
+    print(f"{number} is even.")
+else:
+    print(f"{number} is odd");
 ```
