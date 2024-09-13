@@ -147,3 +147,79 @@ if (number % 2 == 0):
 else:
     print(f"{number} is odd");
 ```
+
+## 3. Loop
+
+### Overview
+
+Loops allow you to repeat a block of code multiple times, which helps avoid repetition and makes your code more efficient. Python provides two primary types of loops: for loops and while loops.
+
+### 1. For Loop
+
+#Examples:
+
+```python
+fruits = ["apple", "banana", "cherry"]
+for fruit in fruits:
+    print(fruit)
+```
+
+### range() Function
+
+`range(start, stop, step)`
+
+- start: The starting value (optional, defaults to 0).
+- stop: The value at which the sequence ends (exclusive).
+- step: The amount by which the value increments (optional, defaults to 1).
+
+```python
+for i in range(5):
+    print(i) # Prints 0, 1, 2, 3, 4,
+
+# Example
+for i in range(1, 10, 2):
+    print(i)  # Prints 1, 3, 5, 7, 9
+```
+
+### 2. While Loop
+
+```python
+#Examples:
+i = 1
+while i <= 5:
+    print(i)
+    i += 1  # Increment i by 1
+# With break
+for i in range(10):
+    if i == 5:
+        break  # Loop stops when i is 5
+    print(i)
+
+# With Skip
+for i in range(10):
+    if i % 2 == 0:
+        continue  # Skip even numbers
+    print(i)  # Prints only odd numbers
+```
+
+### 3. Nested Loops
+
+You can place one loop inside another loop to create a nested loop structure. The inner loop will execute completely for every iteration of the outer loop.
+
+### Example:
+
+```python
+for i in range(1, 4):
+    for j in range(1, 4):
+        print(f"i = {i}, j = {j}")
+```
+
+### Practical Examples of loops
+
+```python
+#Sum of Numbers from 1 to 10
+sum = 0
+for i in range(1, 11):
+    sum += i
+print("The sum is:", sum)
+```

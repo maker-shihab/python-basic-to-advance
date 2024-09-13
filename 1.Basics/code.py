@@ -37,10 +37,28 @@ print("My name is {} and I am {} years old.".format(name, age))
 # print(f"Your entered: {user_input}");
 
 # Conditionals
-age = int(input("Enter your age: "));
+# age = int(input("Enter your age: "));
 if (age >= 45):
     print(f"Sorry you are not allowed {age}");
 elif (age <= 18):
     print(f"Sorry you are not allowed {age}");
 else: 
     print("Welcome, you are allowed to enter.");
+
+# Checking even odd numbers
+# number = int(input("Enter a number: "));
+# if (number % 2 == 0):
+#     print(f"{number} is even.")
+# else:
+#     print(f"{number} is odd");
+
+# Loops
+fruits = ["apple", "banana", "cherry"]
+for fruit in fruits:
+    print(fruit)
+
+# While Loop
+i = 1
+while i <= 5:
+    print(i)
+    i += 1
