@@ -223,3 +223,159 @@ for i in range(1, 11):
     sum += i
 print("The sum is:", sum)
 ```
+
+## 4. Functions
+
+### Overview
+
+Functions are blocks of reusable code that perform a specific task. They allow you to organize your code, avoid repetition, and make it more modular. In Python, functions are defined using the def keyword.
+
+### Defining
+
+```python
+def function_name(parameters):
+    # Code block (function body)
+    return result  # Optional
+```
+
+- function_name: The name of the function.
+- parameters: Inputs (optional) the function takes (also called arguments).
+- return: The value that the function returns (optional).
+
+### Example:
+
+```python
+def greet():
+    print("Hello, World!")
+
+greet()  # Calling the function
+```
+
+### Function with Parameters
+
+You can pass data into functions using parameters.
+
+### Example:
+
+```python
+def greet(name):
+    print(f"Hello, World!")
+greet("Shihab")
+```
+
+### Function with Return Value
+
+A function can return a value using the `return` statement. This value can be used outside the function.
+
+### Example:
+
+```python
+def add(a, b):
+    result = a + b
+
+result = add(2, 4)
+print(f"This sum is {result}")
+```
+
+### Default Parameters
+
+You can define default values for function parameters, which will be used if no argument is passed for that parameter.
+
+### Example:
+
+```python
+def greet(name="Stranger"):
+    print(f"Hello {name}")
+
+greet()
+greet("Shihab")
+```
+
+### Keyword Arguments
+
+Functions can be called with keyword arguments, which makes the code more readable and allows arguments to be passed in any order.
+
+### Example:
+
+```python
+def introduce(name, age):
+    print(f"My name is {name} and age is {age}")
+
+introduce(age=25, name="Shihab") # Arguments in reverse order using kewords
+```
+
+### Arbitrary Arguments
+
+If we're unsure how many arguments will be passed, we can `*args` to handle an arbitrary number of arguments. `*args` collects the arguments into a tuple.
+
+### Example:
+
+```python
+def sum_numbers(*args):
+    total = 0
+    for num in args:
+        total += num
+    return total
+print(sum_numbers(1, 2, 3, 4, 5)) #Output: 15
+```
+
+### Arbitrary Keyword Arguments (`**kwargs`)
+
+Similarly, we can use `**kwargs` to accept an arbitrary number of keyword arguments. It collects the arguments into a dictionary.
+
+### Example:
+
+```python
+def print_info(**kwargs):
+    for key, value in kwargs.items():
+        print(f"{key}:{value}")
+print_info(name="Shihab", age=25, country="Bangladesh")
+```
+
+### Practical Examples
+
+### Calculate Factorial Using Recursion
+
+Recursion is when a function calls itself. Here's an example of a recursive function to calculate the factorial of a number.
+
+```python
+def factorial(n):
+    if (n == 1):
+        return 1
+    else:
+        return n * factorial(n - 1)
+print(factorial(5)) # Output: 120
+```
+
+### Find Maximum of Three Numbers
+
+```python
+def find_max(a, b, c):
+    if a >= b and a >= c:
+        return a
+    elif b >= c and b >= c:
+        return b
+    else:
+        return c
+print(find_max(10, 15, 7)) # Output: 15
+```
+
+### Check if a Number is Prime
+
+```python
+def is_prime(num):
+    if num <= 1:
+        return False
+    for i in range(2, num):
+        if num % i == 0:
+            return False
+    return True
+print(is_prime(11)) # Output: True
+print(is_prime(10)) # Output: False
+```
+
+### Key Points to Remember:
+
+- Functions help in organizing your code by making it modular.
+- Functions can take arguments, return values, and even have default or arbitrary parameters.
+- Python supports recursion, but be cautious as too deep recursion can lead to errors.
