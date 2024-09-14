@@ -6,14 +6,14 @@ for i in range(3):
 print("You entered:", numbers)
 
 
-#Coordinates 
+#Tuples 
 coordinates = (10, 20)
 print(f"The x coordinate is {coordinates[0]} and the y coordinate is {coordinates[1]}")
 
+#Set 
 sentence = "Python is fun and Python is powerful"
 unique_words = set(sentence.split())
 print(unique_words)
-
 
 #Dictionary
 user_info = {
