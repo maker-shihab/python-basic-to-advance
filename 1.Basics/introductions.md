@@ -114,7 +114,7 @@ if condition:
     # code block
 ```
 
-### example
+### Example:
 
 ```python
 age = 22;
@@ -128,7 +128,7 @@ else:
 
 ### Conditional Expressions (Ternary Operator)
 
-### Example
+### Example:
 
 ```python
 age = 22;
@@ -156,7 +156,7 @@ Loops allow you to repeat a block of code multiple times, which helps avoid repe
 
 ### 1. For Loop
 
-#Examples:
+### Examples:
 
 ```python
 fruits = ["apple", "banana", "cherry"]
@@ -176,7 +176,6 @@ for fruit in fruits:
 for i in range(5):
     print(i) # Prints 0, 1, 2, 3, 4,
 
-# Example
 for i in range(1, 10, 2):
     print(i)  # Prints 1, 3, 5, 7, 9
 ```
@@ -184,11 +183,11 @@ for i in range(1, 10, 2):
 ### 2. While Loop
 
 ```python
-#Examples:
 i = 1
 while i <= 5:
     print(i)
     i += 1  # Increment i by 1
+
 # With break
 for i in range(10):
     if i == 5:
