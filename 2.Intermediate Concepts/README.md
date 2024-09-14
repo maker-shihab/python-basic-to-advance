@@ -28,13 +28,23 @@ fruits.append("orange") # Adding an item
 fruits.remove("banana") # Removing an item
 ```
 
-### Common List Operations:
+### Python List Methods
 
-- append(): Add an item to the end of the list.
-- remove(): Remove the first occurrence of a value.
-- pop(): Remove and return the last item or the item at the given index.
-- sort(): Sort the list in ascending order.
-- reverse(): Reverse the order of the list.
+Python has many useful list methods that make it really easy to work with lists.
+
+### Method Description
+
+- append() Adds an item to the end of the list
+- extend() Adds items of lists and other iterables to the end of the list
+- insert() Inserts an item at the specified index
+- remove() Removes the specified value from the list
+- pop() Returns and removes item present at the given index
+- clear() Removes all items from the list
+- index() Returns the index of the first matched item
+- count() Returns the count of the specified item in the list
+- sort() Sorts the list in ascending/descending order
+- reverse() Reverses the item of the list
+- copy() Returns the shallow copy of the list
 
 ### Example of Operations:
 
